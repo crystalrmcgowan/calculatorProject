@@ -1,0 +1,149 @@
+/*light green color for operations is #82C276*/
+.calculatorContent {
+  width: 500px;
+  height: 500px;
+  background-color: #61B34F;
+}
+
+div p {
+  color: white;
+  margin: 0;
+}
+
+button {
+  color: white;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+/********************FIRST ROW*****************/
+.firstRow {
+  height: 20%;
+  display: flex;
+}
+
+#cButton {
+  width: 25%;
+  background-color: #61B34F;
+  border: 0.5px solid white;
+}
+
+#cButton:active {
+    background-color: #82C276;
+}
+
+#result {
+  width: 75%;
+  background-color: #61B34F;
+}
+
+/*****************SECOND ROW***************/
+.secondRow {
+  height: 20%;
+  display: flex;
+}
+
+.secondRow button {
+  width: 25%;
+  background-color: #61B34F;
+  border: 0.5px solid white;
+}
+
+#divide {
+  color: darkgreen;
+}
+
+/********************THIRD ROW******************/
+.thirdRow {
+  height: 20%;
+  display: flex;
+}
+
+.thirdRow button {
+  width: 25%;
+  background-color: #61B34F;
+  border: 0.5px solid white;
+}
+
+#multiply {
+  color: darkgreen;
+}
+
+/********************FOURTH ROW******************/
+.fourthRow {
+  height: 20%;
+  display: flex;
+}
+
+.fourthRow button {
+  width: 25%;
+  background-color: #61B34F;
+  border: 0.5px solid white;
+}
+
+#subtract {
+  color: darkgreen;
+}
+
+/******************FIFTH ROW*******************/
+.fifthRow {
+  height: 20%;
+  display: flex;
+}
+
+.fifthRow button {
+  width: 25%;
+  background-color: #61B34F;
+  border: 0.5px solid white;
+}
+
+#add {
+  color: darkgreen;
+}
+
+/******************OPERATIONS*****************/
+#divide {
+  background-color: #82C276;
+  color: #
+}
+
+#divide:active {
+  background-color: #61B34F;
+}
+
+#multiply {
+  background-color: #82C276;
+}
+
+#multiply:active {
+  background-color: #61B34F;
+}
+
+#subtract {
+  background-color: #82C276;
+}
+#subtract:active {
+  background-color: #61B34F;
+}
+
+#add {
+  background-color: #82C276;
+}
+
+#add:active {
+  background-color: #61B34F;
+}
+
+
+/******************BUTTON MANIPULATION**************/
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: lightgreen;
+}
+
+/*.operations:active {
+  background-color: darkgreen;
+}*/
