@@ -8,19 +8,17 @@ let add = document.querySelector("#add")
 let subtract = document.querySelector("#subtract")
 
 for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function() {
+  if (buttons[i].type === "reset") {
+      buttons[i].addEventListener("click", function (){
+      document.getElementById('#result')
+      result.textContent = " "
+      })
+  }
+
+  if (buttons[i].type === "button"){
+    buttons[i].addEventListener("click", function() {
     let number = this.value
     result.textContent += number
-  })
+    })
+  }
 }
-
-document.getElementById("#cButton").reset()
-
-// for (var i = 0; i < operations.length; i++) {
-//   let _button = document.querySelector(operations[i].buttonSelector)
-//   _button.addEventListener("click", function() {
-//     let sign = this.textContent
-//     console.log("got here", this.textContent, sign)
-//     result.textContent = sign
-//   })
-// }
