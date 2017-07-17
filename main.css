@@ -20,7 +20,7 @@ output {
   color: white;
   display: flex;
   justify-content: flex-end;
-  font-size: 4em;
+  font-size: 3em;
   padding: 15px;
 }
 
