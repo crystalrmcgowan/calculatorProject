@@ -4,76 +4,68 @@ let display = document.querySelector("output")
 let decimal = document.querySelector("#decimal")
 let equals = document.querySelector("#equal")
 let numbers = document.querySelectorAll(".numbers")
+let operations = document.querySelectorAll(".operations")
 
-let num1 = 0
-let num2 = 0
+let num1 = ''
+let num2 = ''
+let op = ''
+
+const seven = document.querySelector("#seven")
+const eight = document.querySelector("#eight")
+const nine = document.querySelector("#nine")
+const four = document.querySelector("#four")
+const five = document.querySelector("#five")
+const six = document.querySelector("#six")
+const one = document.querySelector("#one")
+const two = document.querySelector("#two")
+const three = document.querySelector("#three")
+
+for (var i = 0; i < operations.length; i++) {
+  operations[i].addEventListener("click", function(event){
+    if (operations.length === 0) {
+      num1 += numbers
+    } else {
+      num2 += numbers
+    }
+    // set `op` to be the value of this button that was clicked
+  })
+}
 
 for (var i = 0; i < numbers.length; i++) {
-  numbers[i].addEventListener("click", function() {
-    let seven = document.querySelector("#seven")
-    let eight = document.querySelector("#eight")
-    let nine = document.querySelector("#nine")
-    let four = document.querySelector("#four")
-    let five = document.querySelector("#five")
-    let six = document.querySelector("#six")
-    let one = document.querySelector("#one")
-    let two = document.querySelector("#two")
-    let three = document.querySelector("#three")
-
-    if (seven) {
-      display.textContent = "7"
-    }
-    else if (eight) {
-      display.textContent = "8"
-    }
-    else if (nine) {
-      display.textContent = "9"
-    }
-    else if (four){
-      display.textContent = "4"
-    }
-    else if (five) {
-      display.textContent = "5"
-    }
-    else if (six) {
-      display.textContent = "6"
-    }
-    else if (one) {
-      display.textContent = "1"
-    }
-    else if (two) {
-      display.textContent = "2"
-    }
-    else if (three) {
-      display.textContent = "3"
-    }
+  numbers[i].addEventListener("click", function(event) {
+    num1 += event.target.value
+    display.textContent = num1
+    // OR
+    num2 += event.target.value
+    display.textContent = num2
   })
 }
 
 for (var i = 0; i < buttons.length; i++) {
-  clear.addEventListener ("click", function clear() {
-    display.textContent = " "
-  })
 
-  decimal.addEventListener ("click", function addDecimal() {
+  decimal.addEventListener("click", function addDecimal() {
     display.textContent = "."
   })
 
-  equals.addEventListener ("click", function equals() {
-    if (buttons[i] === "divide") {
+  equals.addEventListener("click", function equals() {
+    if (op === "/") {
       display.textContent = num1 / num2
     }
 
-    if (buttons[i] === "multiply") {
+    if (op === "*") {
       display.textContent = num1 * num2
     }
 
-    if (buttons[i] === "subtract") {
+    if (op === "-") {
       display.textContent = num1 - num2
     }
 
-    if (buttons[i] === "add") {
+    if (op === "+") {
       display.textContent = num1 + num2
     }
   })
+
+  clear.addEventListener("click", function clear() {
+    display.textContent = " "
+    })
 }
