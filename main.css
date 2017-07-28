@@ -16,7 +16,7 @@ button {
   font-weight: lighter;
 }
 
-p {
+output {
   color: white;
   display: flex;
   justify-content: flex-end;
