@@ -1,21 +1,17 @@
-/*light green color for operations is #82C276*/
 .calculatorContent {
   width: 500px;
   height: 500px;
   background-color: #61b34f;
 }
-
 div p {
   color: white;
   margin: 0;
 }
-
 button {
   color: white;
   font-size: 2em;
   font-weight: lighter;
 }
-
 output {
   color: white;
   display: flex;
@@ -23,111 +19,90 @@ output {
   font-size: 3em;
   padding: 15px;
 }
-
 /********************FIRST ROW*****************/
 .firstRow {
   height: 20%;
   display: flex;
 }
-
 #cButton {
   width: 27%;
   background-color: #61b34f;
   border: 0.5px solid white;
 }
-
 #cButton:active {
   background-color: #82c276;
 }
-
 #result {
   width: 75%;
   background-color: #61b34f;
 }
-
 /*****************SECOND ROW***************/
 .secondRow {
   height: 20%;
   display: flex;
 }
-
 .secondRow button {
   width: 25%;
   background-color: #61b34f;
   border: 0.5px solid white;
 }
-
 #divide {
   color: darkgreen;
 }
-
 /********************THIRD ROW******************/
 .thirdRow {
   height: 20%;
   display: flex;
 }
-
 .thirdRow button {
   width: 25%;
   background-color: #61b34f;
   border: 0.5px solid white;
 }
-
 #multiply {
   color: darkgreen;
 }
-
 /********************FOURTH ROW******************/
 .fourthRow {
   height: 20%;
   display: flex;
 }
-
 .fourthRow button {
   width: 25%;
   background-color: #61b34f;
   border: 0.5px solid white;
 }
-
 #subtract {
   color: darkgreen;
 }
-
 /******************FIFTH ROW*******************/
 .fifthRow {
   height: 20%;
   display: flex;
 }
-
 .fifthRow button {
   width: 25%;
   background-color: #61b34f;
   border: 0.5px solid white;
 }
-
 #add {
   color: darkgreen;
 }
-
 /******************OPERATIONS*****************/
 #divide {
   background-color: #82c276;
 }
-
 #divide:active {
   background-color: #61b34f;
   color: white;
 }
-
 #multiply {
   background-color: #82c276;
 }
-
 #multiply:active {
   background-color: #61b34f;
   color: white;
 }
-
 #subtract {
   background-color: #82c276;
 }
@@ -135,21 +110,17 @@ output {
   background-color: #61b34f;
   color: white;
 }
-
 #add {
   background-color: #82c276;
 }
-
 #add:active {
   background-color: #61b34f;
   color: white;
 }
-
 /******************BUTTON MANIPULATION**************/
 button:focus {
   outline: none;
 }
-
 button:active {
   background-color: lightgreen;
 }
